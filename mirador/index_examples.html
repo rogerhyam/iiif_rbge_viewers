@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mirador 3 @ RBGE Examples</title>
+    <script src="dist/mirador.min.js"></script>
+
+</head>
+
+<body>
+    <div id="mirador" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"></div>
+    <script type="text/javascript">
+        var miradorInstance = Mirador.viewer({
+            id: 'mirador',
+            windows: [{
+                manifestId: 'https://iiif.rbge.org.uk/herb/iiif/E00008781/manifest'
+            },
+            {
+                manifestId: 'https://iiif.rbge.org.uk/herb/iiif/E00413980/manifest'
+            },
+            {
+                manifestId: 'https://iiif.rbge.org.uk/herb/iiif/E00588401/manifest'
+            }],
+            catalog: [
+                { manifestId: "https://iiif.rbge.org.uk/herb/iiif/E00008781/manifest", provider: "Royal Botanic Garden Edinburgh" },
+                { manifestId: "https://iiif.rbge.org.uk/herb/iiif/E00588401/manifest", provider: "Royal Botanic Garden Edinburgh" },
+                { manifestId: "https://iiif.rbge.org.uk/herb/iiif/E00065316/manifest", provider: "Royal Botanic Garden Edinburgh" },
+                { manifestId: "https://iiif.rbge.org.uk/herb/iiif/E00576677/manifest", provider: "Royal Botanic Garden Edinburgh" },
+                { manifestId: "https://iiif.rbge.org.uk/herb/iiif/E00413980/manifest", provider: "Royal Botanic Garden Edinburgh" },
+                { manifestId: "https://iiif.rbge.org.uk/herb/iiif/E00413981/manifest", provider: "Royal Botanic Garden Edinburgh" },
+                { manifestId: "https://iiif.rbge.org.uk/herb/iiif/E00413979/manifest", provider: "Royal Botanic Garden Edinburgh" },
+                { manifestId: "https://herbarium.bgbm.org/iiif/B200012401", provider: "Botanic Garden & Botanic Museum Berlin" },
+                { manifestId: "https://herbarium.bgbm.org/iiif/B200012402", provider: "Botanic Garden & Botanic Museum Berlin" }
+            ]
+        });
+    </script>
+
+</body>
+
+</html>

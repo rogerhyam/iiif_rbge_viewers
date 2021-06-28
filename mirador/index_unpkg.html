@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mirador 3 @ RBGE unpkg latest</title>
+</head>
+
+<body>
+    <div id="mirador" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"></div>
+    <script>document.write("<script type='text/javascript' src='https://mirador-dev.netlify.app/dist/mirador.min.js?v=" + Date.now() + "'><\/script>");</script>
+    <script type="text/javascript">
+        var miradorInstance = Mirador.viewer({
+            id: 'mirador'
+        });
+    </script>
+
+</body>
+
+</html>
